@@ -9,39 +9,41 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="login.css">
 
-    <title>Hello, world!</title>
+    <title>Form Login Admin</title>
   </head>
   <body>
+    
+      <?php
+        if (isset($_GET['message']))     {
+          echo'<div class="alert alert-danger">';
+          echo "Username atau Password Salah";
+        }
+      ?>
+    </div>
     <div class="container">
       <h4 class="text-center">FORM LOGIN</h4>
       <hr>
 
-      <form>
+      <form method="POST" action="proses.php">
         <div class="form-grup">
           <label>Username</label>
-          <input type="text" name="" class="form-control" placeholder="Masukkan Username Anda">
+          <input type="text" name="username" class="form-control" placeholder="Masukkan Username Anda">
         </div>
 
         <div class="form-grup">
           <label>Password</label>
-          <input type="password" name="" class="form-control" placeholder="Masukkan Password Anda">
+          <input type="password" name="password" class="form-control" placeholder="Masukkan Password Anda">
         </div>
 
         
         <br>
-        <button type="submit" class="btn-primary">LOGIN</button>
-        <button type="submit" class="btn-danger">RESET</button>
+        <center>
+        <button type="submit" name="masuk" class="btn-primary">LOGIN</button>
+        </center>
       </form>
       <br>
 
     </div>
-
-<!--      if($sql){
-          echo '<script>alert("Berhasil Login");document.location="login.php?message=berhasil"; </script>';
-          echo $jenis_ujian;
-        }else{
-          echo '<div class="alert alert-warning">Gagal melakukan Login</div>';
-        }
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -108,7 +108,6 @@
     </select>
   </div>
 
-
   <div class="left-box">
     <label>Alamat Lengkap</label>
     <input name="alamat" type="text" class="form-control">
@@ -120,12 +119,14 @@
   </div>
 
   <div class="form-group row">
-        <label class=" col-form-label">&nbsp;</label>
+        <label class="col-form-label">&nbsp;</label>
         <div class="col-sm-10">
           <input type="submit" name="submit" class="btn btn-primary" value="SIMPAN">
+          <a class="btn btn-primary btn-md" href="login.php" role="button">LOGIN</a>
         </div>
       </div>
-</div>
+
+  </div>
 
     <?php
     if(isset($_POST['submit'])){
