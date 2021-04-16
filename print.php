@@ -25,7 +25,7 @@
     <br>
     <div class="container">
      <!--  <center><h2>Daftar Rekapan Sidang Mahasiswa</h2></center> 
-      <center><h2>Program Studi Perbandingan Mazhab</h2></center> 
+      <center><h2>Jurusan Perbandingan Mazhab</h2></center> 
        --> 
        <!-- <p ><img src=”logo.png” style=”float:left;” />tulis teks disini</p> -->
        <img src="logo.png" width="200px" height="150px" style="float: left;">
